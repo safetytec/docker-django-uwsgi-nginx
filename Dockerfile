@@ -7,6 +7,7 @@ RUN apt-get install -y nginx supervisor
 RUN apt-get install -y libffi-dev libxml2-dev libxslt1-dev libtiff4-dev \
 						libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev \
 						libwebp-dev
+RUN apt-get install -y libpq-dev
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
